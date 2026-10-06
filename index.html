@@ -17,7 +17,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Valor Além da Aparência", "alternateName": "VA", "url": "https://valoralemdaaparencia.com.br/", "logo": "https://valoralemdaaparencia.com.br/icon-512.png", "slogan": "Reflexões que transformam", "founder": {"@id": "https://valoralemdaaparencia.com.br/#ivan"}, "sameAs": ["https://www.instagram.com/valoralemdaaparencia", "https://www.tiktok.com/@valoralemdaaparencia", "https://www.linkedin.com/company/valor-alem-da-aparencia/", "https://www.youtube.com/@ivangomides", "https://open.spotify.com/playlist/4WNwJnVtedycVsjwPRnB4s"]}, {"@type": "Person", "@id": "https://valoralemdaaparencia.com.br/#ivan", "name": "Ivan Gomides de Moura", "jobTitle": "Profissional de Saúde, Segurança e Meio Ambiente (SSMA)", "image": "https://valoralemdaaparencia.com.br/ivan.webp", "url": "https://valoralemdaaparencia.com.br/#sobre"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Valor Além da Aparência", "alternateName": "VA", "url": "https://valoralemdaaparencia.com.br/", "logo": "https://valoralemdaaparencia.com.br/icon-512.png", "slogan": "Reflexões que transformam", "founder": {"@id": "https://valoralemdaaparencia.com.br/#ivan"}, "sameAs": ["https://www.instagram.com/valoralemdaaparencia", "https://www.tiktok.com/@valoralemdaaparencia", "https://www.linkedin.com/company/valor-alem-da-aparencia/", "https://www.youtube.com/@ivangomides", "https://open.spotify.com/playlist/4WNwJnVtedycVsjwPRnB4s"]}, {"@type": "Person", "@id": "https://valoralemdaaparencia.com.br/#ivan", "name": "Ivan Gomides de Moura", "jobTitle": "Profissional de Saúde, Segurança e Meio Ambiente (SSMA)", "image": "https://valoralemdaaparencia.com.br/ivan.webp", "url": "https://valoralemdaaparencia.com.br/#sobre", "sameAs": ["https://www.linkedin.com/in/ivan-gomides-de-moura-76194ab4"]}, {"@type": "Book", "name": "Valor Além da Aparência", "author": {"@id": "https://valoralemdaaparencia.com.br/#ivan"}, "inLanguage": "pt-BR"}]}</script>
 <title>Valor Além da Aparência · Reflexões que transformam | Ivan Gomides</title>
 <meta name="description" content="Valor Além da Aparência (VA) — reflexões sobre vida, carreira, liderança e Saúde, Segurança e Meio Ambiente. Livro, músicas autorais e projetos de Ivan Gomides.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -102,7 +102,7 @@ section{padding-block:88px;overflow-x:clip}
 @media (max-width:640px){section{padding-block:64px}}
 
 /* Mapa do ecossistema (home summary) */
-.map{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-navy);border:1px solid var(--line-navy);border-radius:var(--r);overflow:hidden}
+.map{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--navy-3);border:1px solid var(--line-navy);border-radius:var(--r);overflow:hidden}
 .map a{background:var(--navy);padding:26px 24px;text-decoration:none;display:grid;gap:8px;min-width:0;transition:background .25s}
 .map a:hover{background:var(--navy-2)}
 .map h3{color:#fff;font-size:1.35rem}
@@ -124,7 +124,13 @@ section{padding-block:88px;overflow-x:clip}
 @media (max-width:820px){.about{grid-template-columns:1fr;gap:36px}}
 
 /* Reflexões */
-.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.posts{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.post h3{font-size:1.5rem}
+.post .read{margin-top:auto;justify-self:start;display:inline-flex;gap:8px;align-items:center;padding-top:10px;font-weight:800;font-size:.88rem;color:#8a6a2a;text-decoration:none;border-bottom:1px solid #c9b48a}
+.post .read span{transition:translate .25s}
+.post .read:hover span{translate:4px 0}
+.post{grid-template-rows:auto 1fr auto}
+@media (max-width:1060px){.posts{grid-template-columns:repeat(2,1fr)}}
 .post{display:grid;gap:12px;align-content:start;padding:26px;background:var(--paper);border:1px solid var(--line-paper);border-radius:var(--r);min-width:0}
 .post .meta{display:flex;justify-content:space-between;gap:10px;font-size:.78rem;color:var(--ink-soft);font-weight:600}
 .post .tag{color:#9b7631;text-transform:uppercase;letter-spacing:.12em}
@@ -166,6 +172,8 @@ section{padding-block:88px;overflow-x:clip}
 @keyframes pulse{50%{opacity:.55}}
 .steplabels{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;font-size:.74rem;color:var(--ink-soft);font-weight:600}
 .phrases{display:grid;gap:10px}
+.edition{display:inline-flex;align-items:center;gap:10px;justify-self:start;padding:8px 16px;border:1px solid #c9b48a;border-radius:999px;background:var(--paper);font:600 .74rem var(--f-caps);letter-spacing:.14em;text-transform:uppercase;color:#8a6a2a}
+.edition span{width:8px;height:8px;border-radius:50%;background:var(--gold);animation:pulse 2s ease-in-out infinite}
 .phrases p{font:italic 500 1.3rem/1.4 var(--f-display);color:var(--navy)}
 @media (max-width:780px){.book{grid-template-columns:1fr;gap:40px;justify-items:center}.book-body{justify-items:start;width:100%}}
 
@@ -184,7 +192,11 @@ section{padding-block:88px;overflow-x:clip}
 .track .n{font:600 .8rem var(--f-caps);color:var(--gold);width:22px}
 .track b{display:block;color:#fff;font-weight:700}
 .track span{font-size:.85rem;color:var(--on-navy-soft)}
-.track a{font-size:.8rem;font-weight:700;color:var(--gold-soft)}
+.track-links{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.track-links a{font-size:.76rem;font-weight:800;color:var(--gold-soft);text-decoration:none;padding:6px 11px;border:1px solid var(--line-navy);border-radius:999px;transition:background .2s,border-color .2s}
+.track-links a:hover{background:rgba(201,164,90,.14);border-color:var(--gold)}
+.track > div:nth-child(2){min-width:0}
+@media (max-width:480px){.track{grid-template-columns:auto 1fr}.track-links{grid-column:2;justify-content:flex-start}}
 .platforms{display:flex;flex-wrap:wrap;gap:10px}
 @media (max-width:820px){.music{grid-template-columns:1fr}}
 
@@ -296,7 +308,7 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
 .ig-tile.t0{background:var(--navy);border:1px solid var(--line-navy)}
 .ig-tile.t1{background:var(--ivory);color:var(--navy)}
 .ig-tile.t2{background:linear-gradient(160deg,var(--navy-3),var(--navy));border:1px solid var(--line-navy)}
-.ig-tile p{font:italic 500 clamp(.8rem,1.35vw,1.05rem)/1.3 var(--f-display);color:inherit}
+.ig-tile p{font:500 clamp(.8rem,1.35vw,1.05rem)/1.3 var(--f-display);color:inherit}
 .ig-tile.t0 p,.ig-tile.t2 p{color:#fff}
 .ig-mark{position:absolute;top:9%;left:12%;font:600 .6rem var(--f-caps);letter-spacing:.2em;color:var(--gold)}
 .ig-hover{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:6px;background:rgba(13,27,54,.86);color:var(--gold-soft);font-weight:700;font-size:.8rem;opacity:0;transition:opacity .3s;z-index:1}
@@ -511,7 +523,7 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
       <a href="#sobre"><span class="go">Sobre o VA</span><h3>O propósito</h3><p>Como o projeto nasceu e quem é Ivan Gomides.</p></a>
       <a href="#reflexoes"><span class="go">Reflexões</span><h3>Textos para pensar</h3><p>Vida, propósito, liderança, saúde emocional e relações profissionais.</p></a>
       <a href="#sst"><span class="go">SST &amp; Carreira</span><h3>Segurança é cultura</h3><p>SSMA, gestão de riscos, contratadas e desenvolvimento profissional.</p></a>
-      <a href="#livro"><span class="go">Livro</span><h3>Valor Além da Aparência</h3><p>A obra de Ivan Gomides, hoje em desenvolvimento.</p></a>
+      <a href="#livro"><span class="go">Livro</span><h3>Valor Além da Aparência</h3><p>O primeiro livro de Ivan Gomides. Edição digital em preparação.</p></a>
       <a href="#musicas"><span class="go">Músicas</span><h3>Reflexões em canção</h3><p>Músicas autorais do projeto, disponíveis no Spotify.</p></a>
       <a href="#projetos"><span class="go">Projetos</span><h3>PGIC e o que vem por aí</h3><p>Palestras, treinamentos, materiais e soluções para empresas.</p></a>
     </nav>
@@ -545,6 +557,7 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
       <div class="bio-actions">
         <button class="btn btn-line" id="bioBtn" type="button" aria-expanded="false" aria-controls="bioMore">Ler a história completa</button>
         <a class="btn btn-gold" href="#contato">Fale com Ivan</a>
+        <a class="btn btn-line" href="https://www.linkedin.com/in/ivan-gomides-de-moura-76194ab4" target="_blank" rel="noopener">Ver LinkedIn do Ivan</a>
       </div>
     </div>
   </div>
@@ -569,7 +582,7 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
     <div class="sec-head">
       <p class="eyebrow">Reflexões</p>
       <h2 id="ref-t">Leituras do tamanho de um café</h2>
-      <p class="muted">Cada texto indica quantos cafés dura a leitura. Novas reflexões são publicadas com frequência.</p>
+      <p class="muted">Reflexões publicadas pelo VA sobre carreira, pessoas e valor humano. Escolha uma e leia o texto completo.</p>
     </div>
     <div class="brew">
       <button class="brew-cup" id="brewCup" type="button" aria-label="Servir outra reflexão">
@@ -585,31 +598,36 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
       </button>
       <div class="brew-body">
         <span class="eyebrow">Reflexão servida</span>
-        <p class="brew-q" id="brewQ">“Aparência abre portas. Caráter mantém você lá dentro.”</p>
-        <div class="brew-foot"><button class="btn btn-line" id="brewBtn" type="button">Servir outra reflexão</button><span class="brew-n" id="brewN">1 / 8</span></div>
+        <p class="brew-q" id="brewQ">“Cargos passam, empresas mudam e ciclos se encerram. Mas aquilo que construímos como pessoas permanece.”</p>
+        <div class="brew-foot"><button class="btn btn-line" id="brewBtn" type="button">Servir outra reflexão</button><span class="brew-n" id="brewN">1 / 6</span></div>
       </div>
     </div>
     <div class="posts">
       <article class="post">
-        <div class="meta"><span class="tag">Carreira</span><span class="cups" title="Leitura de 1 café"><i></i> 1 café</span></div>
-        <h3>O crachá diz o cargo. A atitude diz quem você é.</h3>
-        <p>Sobre a diferença entre ocupar uma função e realmente fazer diferença no lugar onde se trabalha.</p>
+        <div class="meta"><span class="tag">Carreira</span></div>
+        <h3>Processo x Profissional</h3>
+        <a class="read" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener">Leia a reflexão <span aria-hidden="true">→</span></a>
       </article>
       <article class="post">
-        <div class="meta"><span class="tag">SST</span><span class="cups" title="Leitura de 2 cafés"><i></i><i></i> 2 cafés</span></div>
-        <h3>Ninguém sai de casa para se acidentar</h3>
-        <p>Por que a cultura de segurança começa no respeito às pessoas, e não no formulário.</p>
+        <div class="meta"><span class="tag">Pessoas</span></div>
+        <h3>Depois dos cargos, ainda ficam as pessoas</h3>
+        <a class="read" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener">Leia a reflexão <span aria-hidden="true">→</span></a>
       </article>
       <article class="post">
-        <div class="meta"><span class="tag">Liderança</span><span class="cups" title="Leitura de 1 café"><i></i> 1 café</span></div>
-        <h3>Liderar é enxergar o que não aparece no relatório</h3>
-        <p>O que um líder percebe quando olha para a equipe além dos números.</p>
+        <div class="meta"><span class="tag">Carreira</span></div>
+        <h3>O sucesso também pode ser uma fase perigosa</h3>
+        <a class="read" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener">Leia a reflexão <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="post">
+        <div class="meta"><span class="tag">Valorização</span></div>
+        <h3>O Valor de Cada Profissão</h3>
+        <a class="read" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener">Leia a reflexão <span aria-hidden="true">→</span></a>
       </article>
     </div>
     <div class="tags" aria-label="Temas">
       <span>Vida</span><span>Carreira</span><span>Liderança</span><span>Propósito</span><span>Desenvolvimento pessoal</span><span>Relações profissionais</span><span>Saúde emocional</span><span>SST</span><span>Meio ambiente</span><span>Valorização das profissões</span>
     </div>
-    <p class="note">Textos de exemplo para ilustrar o formato. As reflexões publicadas no Instagram <a href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener">@valoralemdaaparencia</a> podem ocupar este espaço.</p>
+    <p class="note">Todas as reflexões completas estão no Instagram <a href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener">@valoralemdaaparencia</a>.</p>
   </div>
 </section>
 
@@ -629,9 +647,9 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
         <a class="btn btn-line" href="https://www.tiktok.com/@valoralemdaaparencia" target="_blank" rel="noopener">Também no TikTok</a>
       </div>
     </div>
-    <div class="ig-feed"><a class="ig-tile t0" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener"><span class="ig-mark">VA</span><p>“Aparência abre portas. Caráter mantém você lá dentro.”</p><span class="ig-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Ver no Instagram</span></a><a class="ig-tile t1" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener"><span class="ig-mark">VA</span><p>“Quem cuida de gente, cuida do resultado.”</p><span class="ig-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Ver no Instagram</span></a><a class="ig-tile t2" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener"><span class="ig-mark">VA</span><p>“Segurança não é o que está no papel. É o que acontece quando ninguém está olhando.”</p><span class="ig-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Ver no Instagram</span></a><a class="ig-tile t0" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener"><span class="ig-mark">VA</span><p>“Toda profissão tem valor quando é feita com dignidade.”</p><span class="ig-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Ver no Instagram</span></a><a class="ig-tile t1" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener"><span class="ig-mark">VA</span><p>“Liderar é perceber o que ninguém disse em voz alta.”</p><span class="ig-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Ver no Instagram</span></a><a class="ig-tile t2" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener"><span class="ig-mark">VA</span><p>“Um café. Uma reflexão. Um novo olhar sobre você.”</p><span class="ig-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Ver no Instagram</span></a></div>
+    <div class="ig-feed"><a class="ig-tile t0" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener"><span class="ig-mark">VA</span><p>Processo x Profissional</p><span class="ig-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Ver no Instagram</span></a><a class="ig-tile t1" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener"><span class="ig-mark">VA</span><p>Depois dos cargos, ainda ficam as pessoas</p><span class="ig-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Ver no Instagram</span></a><a class="ig-tile t2" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener"><span class="ig-mark">VA</span><p>O sucesso também pode ser uma fase perigosa</p><span class="ig-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Ver no Instagram</span></a><a class="ig-tile t0" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener"><span class="ig-mark">VA</span><p>O Valor de Cada Profissão</p><span class="ig-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Ver no Instagram</span></a><a class="ig-tile t1" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener"><span class="ig-mark">VA</span><p>Reflexões que transformam</p><span class="ig-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Ver no Instagram</span></a><a class="ig-tile t2" href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener"><span class="ig-mark">VA</span><p>Um café. Uma reflexão. Um novo olhar sobre você.</p><span class="ig-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Ver no Instagram</span></a></div>
   </div>
-  <p class="wrap ig-note">Frases no formato das publicações do perfil. As postagens reais estão no Instagram.</p>
+  <p class="wrap ig-note">Toque em uma reflexão para ver no Instagram.</p>
 </section>
 
 <!-- SST -->
@@ -672,13 +690,10 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
     <div class="book-body">
       <p class="eyebrow">O livro</p>
       <h2 id="livro-t">Valor Além da Aparência</h2>
-      <p class="muted lede">Um livro sobre enxergar pessoas por inteiro. Reflexões sobre vida, trabalho e relações, escritas a partir da experiência de quem conviveu com gente de todas as profissões e aprendeu que o valor de cada uma está além do que aparece.</p>
+      <p class="muted lede">Valor Além da Aparência é o primeiro livro de Ivan Gomides, construído a partir de experiências profissionais e pessoais transformadas em reflexões sobre carreira, liderança, fé, propósito, recomeços e valor humano.</p>
+      <p class="edition"><span></span>Edição digital em preparação.</p>
       <div class="phrases">
         <p>“Um café. Uma reflexão. Um novo olhar sobre você.”</p>
-      </div>
-      <div class="progress" aria-label="Andamento do livro">
-        <div class="steps"><span class="done"></span><span class="now"></span><span></span><span></span></div>
-        <div class="steplabels"><span>Conceito</span><span>Escrita</span><span>Revisão</span><span>Lançamento</span></div>
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:12px">
         <span class="btn btn-gold" aria-disabled="true" style="background:var(--navy);color:var(--gold-soft)">Comprar o livro · em breve</span>
@@ -709,9 +724,9 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
         </div>
       </div>
       <div class="tracks">
-        <div class="track"><span class="n">01</span><div><b>Título da música</b><span>Breve descrição da mensagem da faixa</span></div><a href="https://open.spotify.com/playlist/4WNwJnVtedycVsjwPRnB4s" target="_blank" rel="noopener">Ouvir</a></div>
-        <div class="track"><span class="n">02</span><div><b>Título da música</b><span>Breve descrição da mensagem da faixa</span></div><a href="https://open.spotify.com/playlist/4WNwJnVtedycVsjwPRnB4s" target="_blank" rel="noopener">Ouvir</a></div>
-        <div class="track"><span class="n">03</span><div><b>Título da música</b><span>Breve descrição da mensagem da faixa</span></div><a href="https://open.spotify.com/playlist/4WNwJnVtedycVsjwPRnB4s" target="_blank" rel="noopener">Ouvir</a></div>
+        <div class="track"><span class="n">01</span><div><b>Valor Além da Aparência</b><span>Faixa-título do projeto VA</span></div><div class="track-links"><a href="https://open.spotify.com/playlist/4WNwJnVtedycVsjwPRnB4s" target="_blank" rel="noopener" aria-label="Ouvir Valor Além da Aparência no Spotify">Spotify</a><a href="https://www.youtube.com/@ivangomides/search?query=Valor%20Al%C3%A9m%20da%20Apar%C3%AAncia" target="_blank" rel="noopener" aria-label="Ouvir Valor Além da Aparência no YouTube">YouTube</a></div></div>
+        <div class="track"><span class="n">02</span><div><b>Quem Vê por Dentro</b><span>Música autoral · Valor Além da Aparência</span></div><div class="track-links"><a href="https://open.spotify.com/playlist/4WNwJnVtedycVsjwPRnB4s" target="_blank" rel="noopener" aria-label="Ouvir Quem Vê por Dentro no Spotify">Spotify</a><a href="https://www.youtube.com/@ivangomides/search?query=Quem%20V%C3%AA%20por%20Dentro" target="_blank" rel="noopener" aria-label="Ouvir Quem Vê por Dentro no YouTube">YouTube</a></div></div>
+        <div class="track"><span class="n">03</span><div><b>O Que o Espelho Não Vê</b><span>Música autoral · Valor Além da Aparência</span></div><div class="track-links"><a href="https://open.spotify.com/playlist/4WNwJnVtedycVsjwPRnB4s" target="_blank" rel="noopener" aria-label="Ouvir O Que o Espelho Não Vê no Spotify">Spotify</a><a href="https://www.youtube.com/@ivangomides/search?query=O%20Que%20o%20Espelho%20N%C3%A3o%20V%C3%AA" target="_blank" rel="noopener" aria-label="Ouvir O Que o Espelho Não Vê no YouTube">YouTube</a></div></div>
       </div>
     </div>
   </div>
@@ -796,7 +811,7 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
         <a href="https://www.tiktok.com/@valoralemdaaparencia" target="_blank" rel="noopener">TikTok <em>@valoralemdaaparencia ↗</em></a>
         <a href="https://open.spotify.com/playlist/4WNwJnVtedycVsjwPRnB4s" target="_blank" rel="noopener">Spotify <em>Playlist oficial ↗</em></a>
         <a href="https://www.linkedin.com/company/valor-alem-da-aparencia/" target="_blank" rel="noopener">LinkedIn do VA <em>Página oficial ↗</em></a>
-        <div>LinkedIn · Ivan Gomides <em>em breve</em></div>
+        <a href="https://www.linkedin.com/in/ivan-gomides-de-moura-76194ab4" target="_blank" rel="noopener">LinkedIn · Ivan Gomides <em>Perfil pessoal ↗</em></a>
         <a href="https://www.youtube.com/@ivangomides" target="_blank" rel="noopener">YouTube <em>@ivangomides ↗</em></a>
       </div>
     </div>
@@ -819,7 +834,7 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
 <footer>
   <div class="wrap foot">
     <a class="brand" href="#inicio"><img src="logo.webp" alt=""><span>VALOR ALÉM DA APARÊNCIA</span></a>
-    <nav class="foot-social" aria-label="Redes sociais"><a href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@valoralemdaaparencia" target="_blank" rel="noopener">TikTok</a><a href="https://www.linkedin.com/company/valor-alem-da-aparencia/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.youtube.com/@ivangomides" target="_blank" rel="noopener">YouTube</a><a href="https://open.spotify.com/playlist/4WNwJnVtedycVsjwPRnB4s" target="_blank" rel="noopener">Spotify</a></nav>
+    <nav class="foot-social" aria-label="Redes sociais"><a href="https://www.instagram.com/valoralemdaaparencia" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@valoralemdaaparencia" target="_blank" rel="noopener">TikTok</a><a href="https://www.linkedin.com/company/valor-alem-da-aparencia/" target="_blank" rel="noopener">LinkedIn VA</a><a href="https://www.linkedin.com/in/ivan-gomides-de-moura-76194ab4" target="_blank" rel="noopener">LinkedIn Ivan</a><a href="https://www.youtube.com/@ivangomides" target="_blank" rel="noopener">YouTube</a><a href="https://open.spotify.com/playlist/4WNwJnVtedycVsjwPRnB4s" target="_blank" rel="noopener">Spotify</a></nav>
     <span>WhatsApp <span class="foot-wa">+55 34 99991-6810</span> · © 2026 Ivan Gomides</span>
   </div>
 </footer>
@@ -885,7 +900,7 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
   /* Entradas e saídas ao rolar */
   if(!reduce&&'IntersectionObserver' in window){
     var groups=[
-      ['.sec-head > *',''],['.map a','zoom'],['.bio-photo','left'],['.bio > *','right'],['.journey span',''],['.creed .eyebrow',''],['.creed-sign',''],
+      ['.sec-head > *',''],['.bio-photo','left'],['.bio > *','right'],['.journey span',''],['.creed .eyebrow',''],['.creed-sign',''],
       ['.brew','zoom'],['.ig-copy > *','left'],['.yt-screen','left'],['.yt-copy > *','right'],['.ig-tile','zoom'],['.post',''],['.tags span',''],['.sst > div:first-child > *','left'],['.topics li','right'],
       ['.cover','left'],['.book-body > *','right'],['.player','left'],['.track','right'],
       ['.pgic','zoom'],['.flow li','right'],['.fcard',''],['.contact > div > *','left'],['form .field',''],['.socials > *','left'],['.wa-card','zoom'],
@@ -908,11 +923,15 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
       });
     },{rootMargin:'0px 0px -10% 0px',threshold:0});
     targets.forEach(function(t){io.observe(t);});
+    /* rede de segurança: revela o que estiver na tela caso o observer perca algum evento */
+    var sweep=function(){var h=innerHeight;targets.forEach(function(t){if(t.classList.contains('in'))return;var r=t.getBoundingClientRect();if(r.top<h&&r.bottom>0)t.classList.add('in');});};
+    var st;addEventListener('scroll',function(){clearTimeout(st);st=setTimeout(sweep,180);},{passive:true});
+    addEventListener('load',function(){setTimeout(sweep,300);});
   }
 
   /* Cartões com inclinação e brilho seguindo o cursor */
   if(fine&&!reduce){
-    document.querySelectorAll('.map a,.post,.fcard,.player,.frame,.ig-tile,.yt-screen').forEach(function(c){
+    document.querySelectorAll('.post,.fcard,.player,.frame,.ig-tile,.yt-screen').forEach(function(c){
       c.classList.add('tilt','glow');
       c.addEventListener('pointermove',function(e){
         var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
@@ -943,14 +962,12 @@ footer{border-top:1px solid var(--line-navy);padding-block:36px;font-size:.84rem
 
   /* Servir uma reflexão */
   var quotes=[
-    'Aparência abre portas. Caráter mantém você lá dentro.',
-    'Nenhuma meta vale mais do que a pessoa que volta para casa no fim do dia.',
-    'Quem cuida de gente, cuida do resultado.',
-    'Toda profissão tem valor quando é feita com dignidade.',
-    'Segurança não é o que está no papel. É o que acontece quando ninguém está olhando.',
-    'Liderar é perceber o que ninguém disse em voz alta.',
-    'Antes de julgar alguém pelo que aparenta, pergunte o que ele carrega.',
-    'Pequenas pausas, como um café, abrem espaço para grandes mudanças.'
+    'Cargos passam, empresas mudam e ciclos se encerram. Mas aquilo que construímos como pessoas permanece.',
+    'Todo profissional carrega uma história que nem sempre aparece no currículo, no crachá ou no cargo que ocupa.',
+    'Segurança vai muito além de normas, documentos e indicadores. Ela envolve pessoas.',
+    'Existem aprendizados, batalhas, escolhas e valores que só conseguimos compreender quando olhamos além da aparência.',
+    'É preciso enxergar o ser humano por trás de cada função.',
+    'Um café. Uma reflexão. Um novo olhar sobre você.'
   ],qi=0,q=document.getElementById('brewQ'),qn=document.getElementById('brewN'),brew=document.querySelector('.brew'),busy=false;
   function serve(){
     if(busy)return;busy=true;qi=(qi+1)%quotes.length;
